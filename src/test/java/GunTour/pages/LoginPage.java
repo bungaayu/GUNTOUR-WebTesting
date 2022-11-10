@@ -13,7 +13,7 @@ public class LoginPage extends PageObject {
     @Managed
     WebDriver driver = getDriver();
 
-    private final By fieldUsername = By.id("email");
+    private final By fieldEmail = By.id("email");
     private final By fieldPassword = By.id("password");
     private final By loginButton = By.id("sign");
 
@@ -24,8 +24,8 @@ public class LoginPage extends PageObject {
             throw new RuntimeException(e);
         }
     }
-    public void InputUsername(String username){
-        driver.findElement(fieldUsername).sendKeys(username);
+    public void InputEmail(String email){
+        driver.findElement(fieldEmail).sendKeys(email);
         wait(1000);
     }
     public void InputPassword(String password){
@@ -39,5 +39,7 @@ public class LoginPage extends PageObject {
     public String getUrl(){
         return driver.getCurrentUrl();
     }
+
+
 
 }

@@ -1,6 +1,7 @@
 package GunTour.stepdefinitions;
 
 import GunTour.pages.HomePageUser;
+import GunTour.pages.LoginPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -22,17 +23,17 @@ public class loginStepDef {
 
     @When("I input email {string}")
     public void iInputEmail(String email) {
-        loginPage.inputEmail(email);
+        loginPage.InputEmail(email);
     }
 
     @And("I input password {string}")
     public void iInputPassword(String password) {
-        loginPage.inputPassowrd(password);
+        loginPage.InputPassword(password);
     }
 
     @And("I click login button")
     public void iClickLoginButton() {
-        loginPage.clickButton();
+        loginPage.ClickLoginButton();
     }
 
     @Then("Should be directed to Home Page")
@@ -41,5 +42,13 @@ public class loginStepDef {
         assertEquals("https://guntour.vercel.app/home", homePageUser.getUrl());
         assertEquals("POPULAR", homePageUser.getProductTittle());
         assertTrue(homePageUser.isBookingVisible());
+    }
+
+    @Given("user already login")
+    public void userAlreadyLogin() {
+        loginPage.open();
+        loginPage.InputEmail("nyusdjaja30@gmail.com");
+        loginPage.InputPassword("Araa1989");
+        loginPage.ClickLoginButton();
     }
 }
