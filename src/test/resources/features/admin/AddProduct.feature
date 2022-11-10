@@ -1,9 +1,9 @@
 Feature: Admin add product by functionality
   Background: Login admin with registered account
-    Given already on login page
-    And input email "admin@gmail.com"
-    And input password "Kunti123"
-    And click login button
+    Given I already on log in page
+    And I input email "admin@gmail.com"
+    And I input password "Kunti123"
+    And I click login button
     Then directed to admin page
 #    When click product menu
 #    And products table appear

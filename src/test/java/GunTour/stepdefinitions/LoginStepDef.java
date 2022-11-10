@@ -1,5 +1,6 @@
 package GunTour.stepdefinitions;
 
+import GunTour.pages.AdminProductPage;
 import GunTour.pages.HomePageUser;
 import GunTour.pages.LoginPage;
 import io.cucumber.java.en.And;
@@ -10,12 +11,12 @@ import io.cucumber.java.en.When;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class loginStepDefFAUZAN {
+public class LoginStepDef {
 
     LoginPage loginPage;
     HomePageUser homePageUser;
 
-
+    AdminProductPage adminProductPage;
     @Given("I already on log in page")
     public void iAlreadyOnLoginPage(){
         loginPage.open();
@@ -43,7 +44,11 @@ public class loginStepDefFAUZAN {
         assertEquals("POPULAR", homePageUser.getProductTittle());
         assertTrue(homePageUser.isBookingVisible());
     }
-
+    @Then("directed to admin page")
+    public void DirectedtoAdminPage(){
+        adminProductPage.clickOk();
+        assertEquals("https://guntour.vercel.app/admin", adminProductPage.getUrl());
+    }
     @Given("user already login")
     public void userAlreadyLogin() {
         loginPage.open();

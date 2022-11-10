@@ -67,4 +67,12 @@ public class AddProductStep {
         adminProductPage.clickOk();
 
     }
+    //    @When("click product menu")
+//    public void clickProductMenu() {
+//        adminProductPage.ClickProductButton();
+//    }
+//    @And("products table appear")
+//    public void productsTableAppear() {
+//        assertEquals("PRICE", adminProductPage.getTableTitle());
+//    }
 }
