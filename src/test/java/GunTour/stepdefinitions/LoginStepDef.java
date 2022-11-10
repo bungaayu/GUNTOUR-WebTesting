@@ -18,8 +18,8 @@ public class LoginStepDef {
         loginPage.open();
     }
     @When("input email {string}")
-    public void InputUsername(String username){
-        loginPage.InputUsername(username);
+    public void InputEmail(String email){
+        loginPage.InputEmail(email);
     }
     @And("input password {string}")
     public void InputPassword(String password){
