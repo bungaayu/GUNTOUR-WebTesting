@@ -44,10 +44,24 @@
 ## Documentation
 - [Manual Web Testing Documentation](https://docs.google.com/spreadsheets/d/1G9qdpQc9Fcxp0PGieqAYl4saj4uKWydXyCT8o_vmvcs/edit?usp=sharing)
 
-## Screenshoot Web Manual Testing
---
-## Screenshoot Web Automation Testing
---
+## How to Run
+1. Clone this repository using this command
+   ```sh
+   git clone https://github.com/GunTour/GunTour-Web-Automation.git
+   ```
+2. Change directory to project directory
+   ```sh
+   cd GunTour-Web-Automation
+   ```
+3. Run using this command
+   ```sh
+   mvn clean verify
+   ```
+   
+## Reports
+
+![report Web](https://user-images.githubusercontent.com/109534135/202137430-64c214a1-0715-4873-98d9-0a71441d6853.png)
+
 
 ## Language and Tools
 ![IntellijIDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
