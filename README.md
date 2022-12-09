@@ -44,6 +44,8 @@
 ## Documentation
 - [Manual Web Testing Documentation](https://docs.google.com/spreadsheets/d/1G9qdpQc9Fcxp0PGieqAYl4saj4uKWydXyCT8o_vmvcs/edit?usp=sharing)
 
+<br>
+
 ## How to Run
 1. Clone this repository using this command
    ```sh
@@ -57,11 +59,13 @@
    ```sh
    mvn clean verify
    ```
-   
+<br>
+
 ## Reports
 
 ![report Web](https://user-images.githubusercontent.com/109534135/202137430-64c214a1-0715-4873-98d9-0a71441d6853.png)
 
+<br>
 
 ## Language and Tools
 ![IntellijIDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
@@ -69,6 +73,8 @@
 ![Selenium](https://img.shields.io/badge/-selenium-000000?style=for-the-badge&logoColor=black)
 ![Serenity BDD](https://img.shields.io/badge/-serenity%20bdd-16a67a?style=for-the-badge&logoColor=black)
 ![Cucumber](https://img.shields.io/badge/-cucumber-4bc47b?style=for-the-badge&logoColor=black)
+
+<br>
 
 ## Contacts
 
